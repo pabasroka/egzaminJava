@@ -32,15 +32,15 @@ class Muzyka implements Comparable {
 
 public class Zad4A1 {
     public static void main(String[] args){
-        Muzyka[] muzykas = new Muzyka[6];
-        muzykas[0] = new Muzyka("Zając");
-        muzykas[1] = new Muzyka("Żubr");
-        muzykas[2] = new Muzyka("evolve");
-        muzykas[3] = new Muzyka("żyrafa");
-        muzykas[4] = new Muzyka("origins");
-        muzykas[5] = new Muzyka("mercury no1");
+        ArrayList<Muzyka> muzykas = new ArrayList<>();
+        muzykas.add(new Muzyka("Zając"));
+        muzykas.add(new Muzyka("Żubr"));
+        muzykas.add(new Muzyka("evolve"));
+        muzykas.add(new Muzyka("żyrafa"));
+        muzykas.add(new Muzyka("origins"));
+        
 
-        Arrays.sort(muzykas);
+        Collections.sort(muzykas);
 
         for (Muzyka m : muzykas) {
             System.out.println(m.getTytul());
