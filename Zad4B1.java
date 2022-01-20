@@ -32,15 +32,16 @@ class Plytoteka implements Comparable {
 
 public class Zad4B1 {
     public static void main(String[] args){
-        Plytoteka[] plytotekas = new Plytoteka[6];
-        plytotekas[0] = new Plytoteka("Zając");
-        plytotekas[1] = new Plytoteka("Żubr");
-        plytotekas[2] = new Plytoteka("evolve");
-        plytotekas[3] = new Plytoteka("żyrafa");
-        plytotekas[4] = new Plytoteka("origins");
-        plytotekas[5] = new Plytoteka("mercury no1");
+        ArrayList<Plytoteka> plytotekas = new ArrayList<>();
+        plytotekas.add(new Plytoteka("Zając"));
+        plytotekas.add(new Plytoteka("Żubr"));
+        plytotekas.add(new Plytoteka("evolve"));
+        plytotekas.add(new Plytoteka("żyrafa"));
+        plytotekas.add(new Plytoteka("origins"));
+        
 
-        Arrays.sort(plytotekas);
+        Collections.sort(plytotekas);
+
 
         for (Plytoteka m : plytotekas) {
             System.out.println(m.getTytul());
